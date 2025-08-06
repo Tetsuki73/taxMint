@@ -100,10 +100,10 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'ITR Filing ', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Business ITR Filing with Balance sheet', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'Capital Gains tax advisory', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'NRI Tax Filing and Advisory', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'Income Tax Services ', description: 'Assisted tax filing by qualified tax experts', link: '/itrpage' },
+    { icon: assets.mobile_icon, title: 'GST & Business Services', description: 'GST registration and timely filing', link: '/gstpage' },
+    { icon: assets.ui_icon, title: 'Certification & others', description: 'others', link: '/certi' },
+
 ]
 
 export const infoList = [
