@@ -6,8 +6,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Services from "../components/Services";
-import Work from "../components/Work";
-
+import WhyUs from "../components/WhyUs";
 export default function Home() {
 
  const [isDarkMode, setIsDarkMode] = useState(false);
@@ -36,7 +35,7 @@ export default function Home() {
     <Header isDarkMode={isDarkMode} />
     <About isDarkMode={isDarkMode} />
     <Services isDarkMode={isDarkMode} />
-    <Work isDarkMode={isDarkMode} />
+    <WhyUs isDarkMode={isDarkMode} />
     <Contact isDarkMode={isDarkMode} />
     <Footer isDarkMode={isDarkMode} />
     </>

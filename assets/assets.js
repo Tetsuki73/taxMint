@@ -36,6 +36,9 @@ import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 
+
+
+
 export const assets = {
     user_image,
     code_icon,
@@ -73,38 +76,54 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'Finance Experience',
+        description: 'Over a Decade of Chartered Accountancy Experience.',
         bgImage: '/work-1.png',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Transperancy',
+        description: 'Clear & Transparent Pricing – No Hidden Charges.',
         bgImage: '/work-2.png',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'Global Reach',
+        description: 'Serving Clients Seamlessly Across India and Worldwide.',
         bgImage: '/work-3.png',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'Connect Easily',
+        description: 'Hassle-Free Online Process via WhatsApp & Email.',
         bgImage: '/work-4.png',
     },
+    
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
-]
+    {
+        icon: assets.web_icon,
+        title: '🧾 Income Tax Services',
+        description: 'Comprehensive ITR filing and tax solutions for salaried individuals, freelancers, businesses, NRIs, and capital gains—plus expert planning and refund support.',
+        slug: 'income-tax-services'
+    },
+    {
+        icon: assets.mobile_icon,
+        title: '🏢 GST & Business Services',
+        description: 'End-to-end services including GST registration and returns, TDS filing, ITC reconciliation, company/LLP incorporation, and UDYAM (MSME) registration.',
+        slug: 'gst-business-services'
+    },
+    {
+        icon: assets.ui_icon,
+        title: '📑 Certifications & Others',
+        description: 'Efficient support for DSC, PAN/TAN applications, net worth certificates, and expert handling of income tax notice replies under sections like 139(9), 143(1), and more.',
+        slug: 'certifications-others'
+    }
+];
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },

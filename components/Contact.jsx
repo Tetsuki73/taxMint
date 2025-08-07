@@ -12,25 +12,24 @@ const Contact = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    // Enter your web3 froms access key below
-    formData.append("access_key", "------Enter Access Key Here-------");
-
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData
+    const response = await fetch("https://formspree.io/f/mwpqrroo", {
+        method: "POST",
+        body: formData,
+        headers: {
+            Accept: "application/json",
+        },
     });
 
     const data = await response.json();
 
-    if (data.success) {
-      setResult("Form Submitted Successfully");
-      event.target.reset();
+    if (data.ok) {
+        setResult("Form Submitted Successfully");
+        event.target.reset();
     } else {
-      console.log("Error", data);
-      setResult(data.message);
+        setResult(data.errors ? data.errors[0].message : "Something went wrong.");
+        console.log("Error", data);
     }
   };
-
 
   return (
     <motion.div
@@ -44,7 +43,7 @@ const Contact = () => {
       whileInView={{ y: 0, opacity: 1 }} 
       transition={{ delay: 0.3, duration: 0.5 }}
       className='text-center mb-2 text-lg font-Ovo'>
-      Connect with me</motion.h4>
+      Connect with us</motion.h4>
 
       <motion.h2
       initial={{ y: -20, opacity: 0 }}
@@ -58,7 +57,7 @@ const Contact = () => {
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.7, duration: 0.5 }}
       className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-      I'd love to hear from you! If you have any questions, comments, or feedback, please use the form below.</motion.p>
+      We would love to hear from you! If you have any questions, comments, or feedback, please use the form below.</motion.p>
 
       <motion.form
       initial={{ opacity: 0 }}

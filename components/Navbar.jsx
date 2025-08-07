@@ -1,6 +1,7 @@
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
+import Contact from './Contact';
 
 const Navbar = ({isDarkMode, setIsDarkMode}) => {
 
@@ -32,14 +33,14 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
 
       <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20" : ""}`}>
         <a href="#top">
-            <Image src={isDarkMode ? assets.logo_dark : assets.logo} alt='' className='w-28 alt="" cursor-pointer mr-14'/>
+            <Image src={isDarkMode ? assets.logo_dark : assets.logo} alt='' className='w-40 alt="" cursor-pointer mr-14'/>
         </a>
 
         <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : "bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"} `}>
             <li><a className='font-Ovo' href="#top">Home</a></li>
-            <li><a className='font-Ovo' href="#about">About me</a></li>
+            <li><a className='font-Ovo' href="#about">About Us</a></li>
             <li><a className='font-Ovo' href="#services">Services</a></li>
-            <li><a className='font-Ovo' href="#work">My Work</a></li>
+            <li><a className='font-Ovo' href="#work">Why Us</a></li>
             <li><a className='font-Ovo' href="#contact">Contact me</a></li>
         </ul>
 
@@ -49,7 +50,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
                 <Image src={isDarkMode ? assets.sun_icon : assets.moon_icon} alt='' className='w-6' />
             </button>
 
-            <a href="#contact" className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50'>Contact 
+            <a href="#contact" className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50'>Get in touch with an expert 
             <Image src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon} alt="" className='w-3'/></a>
 
             <button className='block md:hidden ml-3' onClick={openMenu}>
@@ -68,7 +69,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
             <li><a className='font-Ovo' onClick={closeMenu} href="#top">Home</a></li>
             <li><a className='font-Ovo' onClick={closeMenu} href="#about">About me</a></li>
             <li><a className='font-Ovo' onClick={closeMenu} href="#services">Services</a></li>
-            <li><a className='font-Ovo' onClick={closeMenu} href="#work">My Work</a></li>
+            <li><a className='font-Ovo' onClick={closeMenu} href="#work">Why Us</a></li>
             <li><a className='font-Ovo' onClick={closeMenu} href="#contact">Contact me</a></li>
         </ul>
 
