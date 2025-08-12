@@ -42,8 +42,8 @@ const About = ({isDarkMode}) => {
             transition={{duration: 0.6, delay: 0.8}}
             className='flex-1'>
                 <p className='mb-10 max-w-2xl font-Ovo'>
-                We are a team of seasoned professionals, including Chartered Accountants, dedicated to providing seamless tax filing and business compliance solutions across India.
-                Our mission is to make taxation simple, ensure timely compliance, and deliver cost-effective services tailored for individuals, startups, and small businesses.    
+                We simplify taxation and business compliance for individuals, startups, and small businesses across India. Backed by seasoned Chartered Accountants, we deliver timely, accurate, and cost-effective solutions - so you can focus on growth while we handle the rest.
+                With our expertise, we help you navigate the complexities of tax laws and regulatory requirements so you can focus on what matters most — growing your business.
                 </p>
 
                 <motion.ul
@@ -67,7 +67,7 @@ const About = ({isDarkMode}) => {
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1.3, duration: 0.5 }}
-                className='my-6 text-gray-700 font-Ovo dark:text-white/80'></motion.h4>
+                className='my-6 text-gray-700 font-Ovo dark:text-white/80'>💸💸💸TaxMint - Your Trusted Partner in Tax & Compliance</motion.h4>
             </motion.div>
         </motion.div>
     </motion.div>
