@@ -126,9 +126,9 @@ export const serviceData = [
 ];
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Expertise', description: 'CA-led team providing end-to-end tax, GST, ROC/MCA compliance for startups, MSMEs, and NRIs.' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Expertise', description: 'CA-led team providing End-to-End tax and GST services for Individuals, Startups, MSMEs, and NRIs, along with ROC/MCA compliance for companies and LLPs.' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Coverage', description: 'Serving clients across India and abroad with multi-industry expertise through online and offline consultations.' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Why Choose Us', description: 'Transparent, deadline-focused service with timely reminders and fast query resolution.' }
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Why Choose Us', description: 'Transparent, deadline-focused service with timely reminders and effective query resolution.' }
 ];
 
 export const toolsData = [

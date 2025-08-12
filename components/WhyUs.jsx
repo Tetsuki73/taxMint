@@ -30,7 +30,7 @@ const Work = ({isDarkMode}) => {
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.7, duration: 0.5 }}
       className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-     Serving clients across India with over a decade of expertise. Transparent pricing and smooth online service guaranteed.</motion.p>
+     Empowering clients across India and abroad with a decade of expertise and seamless financial services.</motion.p>
 
     <motion.div
     initial={{ opacity: 0 }}
