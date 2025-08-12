@@ -88,7 +88,7 @@ export const workData = [
     },
     {
         title: 'Transperancy',
-        description: 'Clear and transparent communication with every client, whether individual or business.',
+        description: 'Clear communication with every client, whether individual or business.',
         bgImage: '/work-2.png',
     },
     {
