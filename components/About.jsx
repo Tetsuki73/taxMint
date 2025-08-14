@@ -15,7 +15,7 @@ const About = ({isDarkMode}) => {
       whileInView={{opacity: 1, y: 0}}
       transition={{duration: 0.5, delay: 0.3}}
       className='text-center mb-2 text-lg font-Ovo font-semibold'>
-        TaxMint</motion.h4>
+        TaxMantraa</motion.h4>
 
       <motion.h2 
       initial={{opacity: 0, y: -20}}
@@ -33,7 +33,7 @@ const About = ({isDarkMode}) => {
             initial={{opacity: 0, scale: 0.9}}
             whileInView={{opacity: 1, scale: 1}}
             transition={{duration: 0.6}}
-            className='w-64 sm:w-80 rounded-3xl max-w-none -mt-10'>
+            className='w-64 sm:w-80 rounded-3xl max-w-none -mt-8'>
                 <Image src={assets.user_image} alt='user' className='w-full rounded-3xl'/>
             </motion.div>
             <motion.div 
@@ -67,7 +67,7 @@ const About = ({isDarkMode}) => {
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1.3, duration: 0.5 }}
-                className='my-6 text-gray-700 font-Ovo dark:text-white/80'>💸💸💸TaxMint - Your Trusted Partner in Tax & Compliance</motion.h4>
+                className='my-6 text-gray-700 font-Ovo dark:text-white/80'>💸💸💸TaxMantraa - Your Trusted Partner in Tax & Compliance</motion.h4>
             </motion.div>
         </motion.div>
     </motion.div>

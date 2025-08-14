@@ -12,7 +12,7 @@ const ovo = Ovo({
 
 
 export const metadata = {
-  title: "TaxMint - Tax Solutions",
+  title: "TaxMantraa - Tax Solutions",
   description: "",
 };
 

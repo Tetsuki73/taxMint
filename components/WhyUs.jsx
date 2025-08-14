@@ -16,7 +16,7 @@ const Work = ({isDarkMode}) => {
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ delay: 0.3, duration: 0.5 }}
       className='text-center mb-2 text-lg font-Ovo'>
-      TaxMint</motion.h4>
+      TaxMantraa</motion.h4>
 
       <motion.h2
       initial={{ y: -20, opacity: 0 }}
