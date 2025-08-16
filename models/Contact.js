@@ -15,6 +15,13 @@ const ContactSchema = new mongoose.Schema({
     lowercase: true,
     match: [/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/, 'Please enter a valid email']
   },
+  phone: {
+    type: String,
+    required: [true, 'Phone number is required'],
+    trim: true,
+    match: [/^[\+]?[1-9][\d]{0,15}$/, 'Please enter a valid phone number'],
+    maxlength: [20, 'Phone number cannot exceed 20 characters']
+  },
   message: {
     type: String,
     required: [true, 'Message is required'],
@@ -40,7 +47,7 @@ const ContactSchema = new mongoose.Schema({
 
 // Add indexes for better performance
 ContactSchema.index({ email: 1, createdAt: -1 });
+ContactSchema.index({ phone: 1 });
 ContactSchema.index({ status: 1 });
 
-// With this:
 export default mongoose.models.Contact || mongoose.model('Contact', ContactSchema, 'contact-form');

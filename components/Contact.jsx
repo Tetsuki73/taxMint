@@ -16,6 +16,7 @@ const Contact = () => {
     const data = {
       name: formData.get('name'),
       email: formData.get('email'),
+      phone: formData.get('phone'),
       message: formData.get('message')
     };
 
@@ -95,7 +96,7 @@ const Contact = () => {
         onSubmit={onSubmit} 
         className='max-w-2xl mx-auto'
       >
-        <div className='grid grid-cols-auto gap-6 mt-10 mb-8'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 mb-8'>
           <motion.input
             initial={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -120,6 +121,19 @@ const Contact = () => {
             name='email'
           />
         </div>
+
+        {/* Phone number field - full width */}
+        <motion.input
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ delay: 1.25, duration: 0.6 }}
+          type="tel" 
+          placeholder='Enter your phone number (e.g., +1234567890)' 
+          required
+          disabled={isSubmitting}
+          className='w-full p-3 mb-6 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90 disabled:opacity-50 disabled:cursor-not-allowed' 
+          name='phone'
+        />
 
         <motion.textarea 
           initial={{ y: 100, opacity: 0 }}

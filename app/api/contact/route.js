@@ -6,7 +6,7 @@ export async function POST(request) {
   try {
     await connectDB();
 
-    const { name, email, message } = await request.json();
+    const { name, email, phone, message } = await request.json();
 
     // Get client info for analytics (optional)
     const forwarded = request.headers.get("x-forwarded-for");
@@ -17,6 +17,7 @@ export async function POST(request) {
     const newContact = new Contact({
       name,
       email,
+      phone,
       message,
       ipAddress,
       userAgent
